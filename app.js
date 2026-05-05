@@ -367,31 +367,31 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
   out += '\n';
   out += 'Bersama ini kami sampaikan Laporan Harian Data Pembimbing Kemasyarakatan dan Klien Balai Pemasyarakatan Wilayah Kalimantan Timur-Utara pada \n';
   out += 'Hari/Tgl\t: ' + hari + '\n';
-  out += 'Pukul\t: ' + pukul + '\n';
+  out += 'Pukul   \t: ' + pukul + '\n';
 
   // ---- I. DATA JFT ----
   out += '\n';
   out += 'I.DATA JFT PK : ' + jft.grand_total + ' ORANG\n';
   out += '\n';
-  out += 'Kanwil Ditjenpas  \t: ' + jft.kanwil_total + ' orang\n';
+  out += 'Kanwil Ditjenpas        \t: ' + jft.kanwil_total + ' orang\n';
   out += '•PK Pertama    \t           \t: ' + jft.kanwil_pertama + ' orang\n';
-  out += '•PK Muda         \t           \t: ' + jft.kanwil_muda + ' orang\n';
-  out += '•PK Madya                       \t: ' + jft.kanwil_madya + ' orang\n';
+  out += '•PK Muda       \t           \t: ' + jft.kanwil_muda + ' orang\n';
+  out += '•PK Madya                   \t: ' + jft.kanwil_madya + ' orang\n';
   out += 'Bapas Kelas I Samarinda \t: ' + jft.smr_total + ' orang\n';
   out += '•APK                        \t: ' + jft.smr_apk + ' orang\n';
   out += '•PK Pertama    \t           \t: ' + jft.smr_pertama + ' orang\n';
-  out += '•PK Muda         \t           \t: ' + jft.smr_muda + ' orang\n';
-  out += '•PK Madya                       \t: ' + jft.smr_madya + ' orang\n';
+  out += '•PK Muda       \t           \t: ' + jft.smr_muda + ' orang\n';
+  out += '•PK Madya                   \t: ' + jft.smr_madya + ' orang\n';
   out += 'Bapas Kelas I Balikpapan \t: ' + jft.bpp_total + ' orang\n';
-  out += '•APK                           \t: ' + jft.bpp_apk + ' orang\n';
+  out += '•APK                        \t: ' + jft.bpp_apk + ' orang\n';
   out += '•PK Pertama    \t           \t: ' + jft.bpp_pertama + ' orang\n';
-  out += '•PK Muda         \t           \t: ' + jft.bpp_muda + ' orang\n';
-  out += '•PK Madya                       \t: ' + jft.bpp_madya + ' orang\n';
-  out += 'Bapas Kelas II Tarakan \t: ' + jft.trk_total + ' orang\n';
-  out += '•APK                           \t: ' + jft.trk_apk + ' orang\n';
+  out += '•PK Muda       \t           \t: ' + jft.bpp_muda + ' orang\n';
+  out += '•PK Madya                   \t: ' + jft.bpp_madya + ' orang\n';
+  out += 'Bapas Kelas II Tarakan   \t: ' + jft.trk_total + ' orang\n';
+  out += '•APK                        \t: ' + jft.trk_apk + ' orang\n';
   out += '•PK Pertama    \t           \t: ' + jft.trk_pertama + ' orang\n';
-  out += '•PK Muda         \t           \t: ' + jft.trk_muda + ' orang\n';
-  out += '•PK Madya                       \t: ' + jft.trk_madya + ' orang\n';
+  out += '•PK Muda       \t           \t: ' + jft.trk_muda + ' orang\n';
+  out += '•PK Madya                   \t: ' + jft.trk_madya + ' orang\n';
 
   // ---- II. DATA KLIEN ----
   var smrDew  = n(smr.dewasa);  var smrAnak = n(smr.anak);
@@ -405,7 +405,7 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
   out += 'II.DATA KLIEN :  ' + fmt(totalKlien) + ' ORANG\n';
   out += zwj + 'Bapas Kelas I Samarinda    : ' + fmt(smrDew + smrAnak) + ' orang\n';
   out += '•Dewasa\t\t:  ' + fmt(smrDew) + ' orang\n';
-  out += '•Anak\t\t                :  ' + smrAnak + ' orang\n';
+  out += '•Anak\t\t  :  ' + smrAnak + ' orang\n';
   out += '\n';
   out += zwj + 'Bapas Kelas I Balikpapan : ' + fmt(bppDew + bppAnak) + ' orang\n';
   out += '•Dewasa\t\t:  ' + fmt(bppDew) + ' orang\n';
