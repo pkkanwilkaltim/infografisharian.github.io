@@ -405,15 +405,15 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
   out += 'II.DATA KLIEN :  ' + fmt(totalKlien) + ' ORANG\n';
   out += zwj + 'Bapas Kelas I Samarinda    : ' + fmt(smrDew + smrAnak) + ' orang\n';
   out += '•Dewasa\t\t:  ' + fmt(smrDew) + ' orang\n';
-  out += '•Anak\t\t  :  ' + smrAnak + ' orang\n';
+  out += '•Anak\t\t:  ' + smrAnak + ' orang\n';
   out += '\n';
   out += zwj + 'Bapas Kelas I Balikpapan : ' + fmt(bppDew + bppAnak) + ' orang\n';
   out += '•Dewasa\t\t:  ' + fmt(bppDew) + ' orang\n';
-  out += '•Anak\t\t                :  ' + bppAnak + ' orang\n';
+  out += '•Anak\t\t:  ' + bppAnak + ' orang\n';
   out += '\n';
   out += zwj + 'Bapas Kelas II Tarakan      :  ' + fmt(trkDew + trkAnak) + ' orang\n';
   out += '•Dewasa\t\t: ' + fmt(trkDew) + ' orang\n';
-  out += '•Anak\t\t                : ' + trkAnak + ' orang\n';
+  out += '•Anak\t\t: ' + trkAnak + ' orang\n';
 
   // ---- III. LITMAS ----
   out += '\n';
@@ -463,57 +463,57 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
   // ---- VI. DIVERSI ----
   out += 'VI. PENDAMPINGAN DIVERSI DAN PERADILAN\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas I Samarinda : '    + n(smr.diversi) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : '    + n(smr.diversi) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan : '   + n(bpp.diversi) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan      : ' + n(trk.diversi) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   : ' + n(trk.diversi) + ' orang\n';
   out += zwj + '\n';
 
   // ---- VII. AKOT ----
   out += 'VII. AKOT\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas I Samarinda : '    + n(smr.akot) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : '    + n(smr.akot) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan : '   + n(bpp.akot) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan      : ' + n(trk.akot) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   : ' + n(trk.akot) + ' orang\n';
 
   // ---- VIII. PELATIHAN KERJA ----
   out += '\n';
   out += 'VIII. PELATIHAN KERJA\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas I Samarinda: '      + n(smr.latker) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : '      + n(smr.latker) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan : '    + n(bpp.latker) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan      : '  + n(trk.latker) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   : '  + n(trk.latker) + ' orang\n';
 
   // ---- IX. KLIEN SEKOLAH ----
   out += '\n';
   out += 'IX. KLIEN SEKOLAH\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas I Samarinda : '    + n(smr.sekolah) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : '    + n(smr.sekolah) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan :  '  + n(bpp.sekolah) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan      : ' + n(trk.sekolah) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   : ' + n(trk.sekolah) + ' orang\n';
 
   // ---- X. KLIEN BEKERJA ----
   out += '\n';
   out += 'X. KLIEN BEKERJA\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas I Samarinda : '    + fmt(n(smr.bekerja)) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : '    + fmt(n(smr.bekerja)) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan : '   + fmt(n(bpp.bekerja)) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan      : ' + fmt(n(trk.bekerja)) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   : ' + fmt(n(trk.bekerja)) + ' orang\n';
 
   // ---- XI. TERORIS ----
   out += '\n';
   out += zwj + 'XI. KLIEN TERORIS\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas I Samarinda : '    + n(smr.teroris) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : '    + n(smr.teroris) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan : '   + n(bpp.teroris) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan      : ' + n(trk.teroris) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   : ' + n(trk.teroris) + ' orang\n';
 
   // ---- XII. NARKOTIKA ----
   out += '\n';
   out += zwj + 'XII. KLIEN NARKOTIKA\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas I Samarinda : '    + fmt(n(smr.narkotika)) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : '    + fmt(n(smr.narkotika)) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan : '   + fmt(n(bpp.narkotika)) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan      :  ' + fmt(n(trk.narkotika)) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   :  ' + fmt(n(trk.narkotika)) + ' orang\n';
 
   // ---- XIII. PENUTUP ----
   out += '\n';
