@@ -403,7 +403,7 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
 
   out += '\n';
   out += 'II.DATA KLIEN :  ' + fmt(totalKlien) + ' ORANG\n';
-  out += zwj + 'Bapas Kelas I Samarinda    : ' + fmt(smrDew + smrAnak) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Samarinda  : ' + fmt(smrDew + smrAnak) + ' orang\n';
   out += '•Dewasa\t\t:  ' + fmt(smrDew) + ' orang\n';
   out += '•Anak\t\t:  ' + smrAnak + ' orang\n';
   out += '\n';
@@ -411,7 +411,7 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
   out += '•Dewasa\t\t:  ' + fmt(bppDew) + ' orang\n';
   out += '•Anak\t\t:  ' + bppAnak + ' orang\n';
   out += '\n';
-  out += zwj + 'Bapas Kelas II Tarakan      :  ' + fmt(trkDew + trkAnak) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   :  ' + fmt(trkDew + trkAnak) + ' orang\n';
   out += '•Dewasa\t\t: ' + fmt(trkDew) + ' orang\n';
   out += '•Anak\t\t: ' + trkAnak + ' orang\n';
 
@@ -429,7 +429,7 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
     out += u.label + '     \n';
     out += '•Permintaan Litmas\n';
     out += '1. Dewasa \t: ' + n(u.data.litmas_dew_req)  + ' orang\n';
-    out += '2. Anak \t:   ' + n(u.data.litmas_anak_req) + ' orang\n';
+    out += '2. Anak \t: ' + n(u.data.litmas_anak_req) + ' orang\n';
     out += '* Penyelesaian Litmas\n';
     out += '1. Dewasa \t: ' + n(u.data.litmas_dew_done)  + ' orang\n';
     out += '2. Anak \t: '   + n(u.data.litmas_anak_done) + ' orang\n';
@@ -488,7 +488,7 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
   out += 'IX. KLIEN SEKOLAH\n';
   out += '\n';
   out += zwj + 'Bapas Kelas I Samarinda  : '    + n(smr.sekolah) + ' orang\n';
-  out += zwj + 'Bapas Kelas I Balikpapan :  '  + n(bpp.sekolah) + ' orang\n';
+  out += zwj + 'Bapas Kelas I Balikpapan : '  + n(bpp.sekolah) + ' orang\n';
   out += zwj + 'Bapas Kelas II Tarakan   : ' + n(trk.sekolah) + ' orang\n';
 
   // ---- X. KLIEN BEKERJA ----
@@ -513,7 +513,7 @@ function buildLaporan(smr, bpp, trk, jft, hari, pukul, nama, nip) {
   out += '\n';
   out += zwj + 'Bapas Kelas I Samarinda  : '    + fmt(n(smr.narkotika)) + ' orang\n';
   out += zwj + 'Bapas Kelas I Balikpapan : '   + fmt(n(bpp.narkotika)) + ' orang\n';
-  out += zwj + 'Bapas Kelas II Tarakan   :  ' + fmt(n(trk.narkotika)) + ' orang\n';
+  out += zwj + 'Bapas Kelas II Tarakan   : ' + fmt(n(trk.narkotika)) + ' orang\n';
 
   // ---- XIII. PENUTUP ----
   out += '\n';
