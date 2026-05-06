@@ -39,7 +39,7 @@ body {
 .header-bg {
   position: absolute;
   inset: 0;
-  background-image: var(--header-bg-image);
+  background-image: 820px(--header-bg-image);
   background-size: cover;
   background-position: right center;
   opacity: 50 (--header-bg-opacity);
